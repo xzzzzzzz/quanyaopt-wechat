@@ -1,0 +1,17 @@
+
+$fontSize: 30;
+
+@function px2rem($px) {
+    @return ($px / $fontSize) + rem
+}
+
+image{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h3{
+    height:px2rem(40);
+    line-height: px2rem(40)
+}

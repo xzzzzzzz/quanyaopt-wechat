@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/home/main",
+    "pages/newstext/main",
+    "pages/buildList/main",
+    "pages/builddetails/main",
+    "pages/companyList/main",
+    "pages/companydetails/main",
+    "pages/designerList/main",
+    "pages/designerdetails/main",
+    "pages/superviseList/main",
+    "pages/supervisedetails/main",
+    "pages/supplier/main",
+    "pages/supplierdetails/main",
+    "pages/universitytList/main",
+    "pages/universitydatelid/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  }
+}
