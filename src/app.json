@@ -13,12 +13,50 @@
     "pages/supplier/main",
     "pages/supplierdetails/main",
     "pages/universitytList/main",
-    "pages/universitydatelid/main"
+    "pages/universitydatelid/main",
+    "pages/complaint/main",
+    "pages/consultation/main",
+    "pages/proposal/main",
+    "pages/cooperation/main",
+    "pages/talk/main",
+    "pages/contact/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white"
+  },
+
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#fb3507",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/main",
+        "text": "首页",
+        "iconPath": "static/img/shouye.png",
+        "selectedIconPath": "static/img/shouye.png"
+      },
+      {
+        "pagePath": "pages/talk/main",
+        "text": "公告和说说",
+        "iconPath": "static/img/daiyue.png",
+        "selectedIconPath": "static/img/daiyue.png"
+      },
+      {
+        "pagePath": "pages/cooperation/main",
+        "text": "商务中心",
+        "iconPath": "static/img/shangwuzhongxin.png",
+        "selectedIconPath": "static/img/shangwuzhongxin.png"
+      },
+      {
+        "pagePath": "pages/contact/main",
+        "text": "联系我们",
+        "iconPath": "static/img/lianxiwomen.png",
+        "selectedIconPath": "static/img/lianxiwomen.png"
+      }
+    ]
   }
 }

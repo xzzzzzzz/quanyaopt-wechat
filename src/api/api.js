@@ -55,6 +55,12 @@ export default {
   },
   universitydetails () { // 装修大学堂详情
     return `${baseURL}/index/school/detail`
+  },
+  inforadd() { // 建议、投诉
+    return `${baseURL}/index/index/inforadd`
+  },
+  sjzx() { // 商家入驻
+    return `${baseURL}/index/content/index`
   }
 
 

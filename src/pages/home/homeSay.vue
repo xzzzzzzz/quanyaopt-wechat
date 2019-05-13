@@ -12,24 +12,6 @@
                     </swiper-item>
                 </swiper>
             </div>
-        <div class="say mWidth">
-            <div class="say-content">
-                <div class="say-title">
-                    平台说说
-                </div>
-                <ul class="say-item">
-                    <li v-for="(item,index) in sayList" :key="index" @click="tojump('/pages/newstext/main?ID='+item.id+'&title='+ encodeURI(item.title))">
-                        {{item.title}}
-                    </li>
-                </ul>
-            </div>
-            <div class="foun">
-                <div class="foun-item" v-for="(item,index) in imgList" :key="index">
-                    <img :src=item.img alt="">
-                </div>
-            </div>
-        </div>
-
         <div class="recommend mWidth">
             <div class="recommend-item">
                 <div class="item" v-for="(item,index) in intery" :key="index" @click="tojump('/pages/'+item.name+'/main')">
@@ -44,6 +26,14 @@
         </div>
         <div class="min-banner mWidth">
             <img :src="baseUrl+minBanner.image" alt="">
+        </div>
+
+        <div class="say mWidth">
+            <div class="foun">
+                <div class="foun-item" v-for="(item,index) in imgList" :key="index" @click="tojump(item.url)">
+                    <img :src=item.img alt="">
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -108,9 +98,9 @@ export default {
                 },
             ],
             imgList: [
-                {img: '/static/img/jy.png'},
-                {img: '/static/img/tx.png'},
-                {img:'/static/img/zx.png'}
+                {img: '/static/img/jy.png',url:'/pages/proposal/main'},
+                {img: '/static/img/tx.png',url:'/pages/complaint/main'},
+                {img:'/static/img/zx.png',url:'/pages/consultation/main'}
             ],
             indicatorDots: true,
             autoplay: true,
@@ -188,7 +178,7 @@ export default {
     }
     // 推荐
     .recommend{
-        padding:0 20px;
+        padding:20px;
         .recommend-item{
             width:100%;
             box-sizing: border-box;

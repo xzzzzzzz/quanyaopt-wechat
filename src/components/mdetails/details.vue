@@ -12,10 +12,10 @@
         <div><img :src=baseUrl+carddata.code alt="" width="100%" height="100%"><p>公众号</p></div>
       </div>
     </div>
-
+<!-- 
     <div class="map_box">
       <div class="quyu">服务区域</div>
-    </div>
+    </div> -->
     <!-- 介绍 -->
     <div class="introduce-wrap mWidth">
       <div class="introduce">

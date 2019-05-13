@@ -5,7 +5,7 @@
             <!-- 品牌施工 -->
            <business :businessList='businessList' :jclist="jclist" :originalList="originalList" :supervise="supervise"></business>
             
-            <div class="case-wrapper">
+            <div class="case-wrapper" v-if="caseList.length>0">
                 <div class="mWidth">
                     <h3>
                         案例图片
